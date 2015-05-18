@@ -2,8 +2,10 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
+  get 'donate' => 'static_pages#donate'
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
+  get 'hcl' => 'static_pages#hcl'
 
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
