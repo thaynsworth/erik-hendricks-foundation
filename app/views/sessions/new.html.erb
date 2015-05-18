@@ -1,19 +1,19 @@
-<h1>Login</h1>
 
-    <div>
-      <h1>Log in</h1>
-      <div>
-        <%= form_for(:session, url: login_path) do |f| %>
 
-          <%= f.label :email %>
-          <%= f.text_field :email %>
+<div>
+	<h1>Login</h1>
+  <div>
+    <%= form_for(:session, url: login_path) do |f| %>
 
-          <%= f.label :password %>
-          <%= f.password_field :password %>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
 
-          <%= f.submit "Log in" %>
-        <% end %>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
 
-        <p><%= link_to "Home", root_path %></p>
-      </div>
-    </div>  
+      <%= f.submit "Log in" %>
+    <% end %>
+
+    <p><%= link_to "Home", root_path %></p>
+  </div>
+</div>  

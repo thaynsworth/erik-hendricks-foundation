@@ -8,41 +8,49 @@
 </head>
 <body>
 
-  <div class="wrapper">
-    <header>
-      <div >
-        <div>
-          <div>
-            <h4><%= link_to "Erik Hendrick's Foundation", root_path%></h4>
-          </div>
-          <nav>
-            <ul>
-            	<li><%= link_to "Donate", donate_path %></li>
-            	<li><%= link_to "Hairy Cell Leukemia", hcl_path %></li>
-              <li><%= link_to "Erik Hendricks", about_path %></li>
-              <li><%= link_to "Contact", contact_path %></li>
-            </ul>  
-          </nav>  
-        </div>  
-      </div>
-    </header>
+	  <div class="wrapper">
+	  	<div class="container-fluid">
+	  		<div class="row">
+	  			<div class="col-xs-12 col-sm-8 col-md-8">
+				    <header>
+			        <div>
+			          <h4><%= link_to "Erik Hendrick's Foundation", root_path%></h4>
+			        </div>
+			        <nav>
+			          <ul>
+			          	<li><%= link_to "Donate", donate_path %></li>
+			          	<li><%= link_to "Hairy Cell Leukemia", hcl_path %></li>
+			            <li><%= link_to "Erik Hendricks", about_path %></li>
+			            <li><%= link_to "Contact", contact_path %></li>
+			          </ul>  
+			        </nav>  
+				    </header>
+				  </div>  
+		    </div>
+		  </div>  
 
-    <%= yield %>
-    
-    <div class="push"></div>
-  </div>
-
-  <footer class="footer">
-	  <% if logged_in? %>
-	  <ul>
-	    <li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
-	  </ul>
-	  <% else %>
-	  <ul>
-	    <li><%= link_to "LOG IN", login_path %></li>
-	  </ul>
-	  <% end %> 
-  </footer>
+	    <%= yield %>
+	    
+	    <div class="push"></div>
+	  </div>
+		
+		<div class="container-fluid">
+	  	<div class="row">
+	  		<div class="col-xs-12 col-sm-8 col-md-8">
+			  	<footer class="footer">
+					  <% if logged_in? %>
+					  <ul>
+					    <li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
+					  </ul>
+					  <% else %>
+					  <ul>
+					    <li><%= link_to "LOG IN", login_path %></li>
+					  </ul>
+					  <% end %> 
+				  </footer>
+				</div>
+			</div>
+		</div>
 
 </body>
 </html>
