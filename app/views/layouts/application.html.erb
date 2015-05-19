@@ -41,15 +41,20 @@
 		</div>
 	</div>
 	
-	<nav class="navbar navbar-default navbar-fixed-bottom">
+	<nav id="footer-nav" class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container-fluid">
-			<ul class="nav navbar-nav navbar-right">
-			  <% if logged_in? %>
-			    <li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
-			  <% else %>
-			    <li><%= link_to "LOG IN", login_path %></li>
-			  <% end %>
-		  </ul>
+			<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 text-center">
+				<p>Erik Hendrick's Foundation <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> p.555-555-5555 <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> erikhendricks@gmail.com</p>
+			</div>
+			<div class="col-xs-1 col-sm-1 col-md-1">
+				<ul class="nav navbar-nav navbar-right">
+				  <% if logged_in? %>
+				    <li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
+				  <% else %>
+				    <li><%= link_to "LOG IN", login_path %></li>
+				  <% end %>
+			  </ul>
+		  </div>
 	  </div> 
   </nav>
 
