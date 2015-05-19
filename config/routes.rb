@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get 'donate' => 'static_pages#donate'
   get 'about' => 'static_pages#about'
+  get 'events' => 'static_pages#events'
   get 'contact' => 'static_pages#contact'
   get 'hcl' => 'static_pages#hcl'
 
