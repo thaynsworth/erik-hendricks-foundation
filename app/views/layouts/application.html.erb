@@ -10,7 +10,7 @@
 
 	  <div class="wrapper">
 	  	<div class="container-fluid">
-	  		<div class="row">  			
+	  		<div class="row main-nav">  			
 			    <header>
 		        <div class="col-xs-6 col-sm-6 col-md-6">
 		          <h4><%= link_to "Erik Hendrick's Foundation", root_path%></h4>
@@ -28,7 +28,11 @@
 		    </div>
 		  </div>  
 
-	    <%= yield %>
+			<div class="container">
+				<div class="row">
+					<%= yield %>
+				</div>
+			</div>
 	    
 	    <div class="push"></div>
 	  </div>
