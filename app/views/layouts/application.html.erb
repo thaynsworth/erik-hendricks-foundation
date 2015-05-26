@@ -18,9 +18,9 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-      	<ul>
-      		<li class="nav navbar-nav navbar-brand"><%= link_to "Erik Hendricks Foundation", root_path %></li>
-      	</ul>	
+	      <div id="erik-image" class="navbar-brand">
+	   		<%= link_to image_tag('young_erik.jpg'), root_path %>
+ 				</div>
     	</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,11 +36,9 @@
   </nav>	 
 
 	<div class="container">
+		<%= yield %>				
+	</div>
 
-			<%= yield %>	
-
-	</div>			
-	
 	<nav id="footer-nav" class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container-fluid">
 			<div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 text-center">
