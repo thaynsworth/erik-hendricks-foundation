@@ -4,7 +4,8 @@
 
 
 #erik {
-	padding: 20px;
+	padding: 30px;
+	border-bottom: 1px solid black;
 }
 
 #mission {
@@ -13,9 +14,16 @@
 
 #upcoming-events {
 	background-color: lightgreen;
+	border: 1px solid black;
+	height: 300px;
 }
 
 #main-donate {
 	background-color: lightblue;
+	border: 1px solid black;
+	height: 300px;
 }
 
+#home-info {
+	padding: 30px;
+}
