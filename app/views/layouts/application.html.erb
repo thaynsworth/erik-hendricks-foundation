@@ -41,18 +41,15 @@
 
 	<nav id="footer-nav" class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container-fluid">
-			<div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 text-center">
-				<p>The Erik Hendricks Memorial Foundation <span>|</span> p. 555-555-5555 <span>|</span> e. erikhendricks@gmail.com</p>
+			<div class="col-xs-4 col-sm-4 col-md-4 text-center">
+				<p>The Erik Hendricks Memorial Foundation</p>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-1 text-center">
-				<ul class="nav navbar-nav navbar-right">
-				  <% if logged_in? %>
-				    <li><%= link_to "LOG OUT", logout_path, method: :delete %></li>
-				  <% else %>
-				    <li><%= link_to "LOG IN", login_path %></li>
-				  <% end %>
-			  </ul>
-		  </div>
+			<div class="col-xs-4 col-sm-4 col-md-4 text-center">
+				<p>p. 617-548-2938</p>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 text-center">
+				<p>ehmemorialfoundation@gmail.com</p>
+			</div>
 	  </div> 
   </nav>
 
