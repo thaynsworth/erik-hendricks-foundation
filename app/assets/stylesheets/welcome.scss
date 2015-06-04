@@ -13,14 +13,20 @@
 }
 
 #upcoming-events {
-	background-color: lightgreen;
-	border: 1px solid black;
+	// background-color: lightgreen;
+	
 	height: 300px;
 }
 
-#main-donate {
-	background-color: lightblue;
+#upcoming-events h2 {
+	// text-decoration: underline;
 	border: 1px solid black;
+	padding: 10px;
+}
+
+#main-donate {
+	// background-color: lightblue;
+	// border: 1px solid black;
 	height: 300px;
 }
 
