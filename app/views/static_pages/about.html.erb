@@ -75,3 +75,16 @@
 
 	</div>
 </div>	
+
+<!-- In your HTML -->
+<div class="Collage">
+<img src="<%= asset_path 'erik_laugh.jpg'%>"><img src="<%= asset_path 'family2.jpg'%>"><img src="<%= asset_path 'family.jpg'%>">
+</div>
+
+<script>
+
+	$(window).load(function () {
+        $('.Collage').collagePlus();
+    });
+
+</script>
