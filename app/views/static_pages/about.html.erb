@@ -76,28 +76,24 @@
 	</div>
 </div>	
 
-<!-- In your HTML -->
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12">
 <div class="Collage text-center">
-	<img src="<%= asset_path 'erik_laugh.jpg'%>">
-	<img src="<%= asset_path 'family2.jpg'%>">
-	<img src="<%= asset_path 'family.jpg'%>">
-	<img src="<%= asset_path 'yellow_hat.jpg'%>">
-	<img src="<%= asset_path 'IMG_0109.jpg'%>">
-	<img src="<%= asset_path 'IMG_0257.jpg'%>">
-	<img src="<%= asset_path 'IMG_1390.jpg'%>">
-	<img src="<%= asset_path 'IMG_222.jpg'%>">
-	<img src="<%= asset_path 'IMG_2243.jpg'%>">
-	<img src="<%= asset_path 'IMG_333.jpg'%>">
-	<img src="<%= asset_path 'IMG_444.jpg'%>">
-	<img src="<%= asset_path 'IMG_555.jpg'%>">
-	<img src="<%= asset_path 'P8210246.jpg'%>">
-	<img src="<%= asset_path 'P9040713.jpg'%>">
+	<img src="<%= asset_path 'erik_laugh.jpg'%>"><img src="<%= asset_path 'family2.jpg'%>"><img src="<%= asset_path 'family.jpg'%>"><img src="<%= asset_path 'yellow_hat.jpg'%>"><img src="<%= asset_path 'IMG_0109.jpg'%>"><img src="<%= asset_path 'IMG_0257.jpg'%>"><img src="<%= asset_path 'IMG_1390.jpg'%>"><img src="<%= asset_path 'IMG_222.jpg'%>"><img src="<%= asset_path 'IMG_2243.jpg'%>"><img src="<%= asset_path 'IMG_333.jpg'%>"><img src="<%= asset_path 'IMG_444.jpg'%>"><img src="<%= asset_path 'IMG_555.jpg'%>"><img src="<%= asset_path 'P8210246.jpg'%>"><img src="<%= asset_path 'P9040713.jpg'%>">
+</div>
+</div>
 </div>
 
 <script>
 
 	$(window).load(function () {
-        $('.Collage').collagePlus();
+        $('.Collage').collagePlus(
+        		{
+            'effect' 							: 'effect-2',
+            'fadeSpeed'       		: "slow",
+            'allowPartialLastRow'	: false
+        		}
+        	);
     });
 
 </script>
