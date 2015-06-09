@@ -10,7 +10,9 @@
 			<p>So... there couldn't be too many photos or too many quotes, memories, videos, etc.! Go nuts here. I am sure Thomas can build out a gallery with the photos/content you've given him, and then probably give you the keys to the castle with a little training and you can continue to build it out from there. </p>
 		</div>
 		<div id="youtube" class="col-xs-12 col-sm-12 col-md-5">
-			<h1>YouTube Video here</h1>
+			<!-- <iframe width="560" height="315" src="//www.youtube.com/watch?v=9YCUwokINtc" frameborder="0" allowfullscreen></iframe>  -->
+			<iframe width="450" height="290" src="https://www.youtube.com/embed/9YCUwokINtc" frameborder="0" allowfullscreen></iframe>
+			
 		</div>
 
 	</div>
@@ -86,32 +88,5 @@
 
 <script>
 
-	$(window).load(function () {
-    $('.Collage').collagePlus(
-    		{
-        'effect' 							: 'effect-2',
-        'fadeSpeed'       		: "slow",
-        'allowPartialLastRow'	: false
-    		}
-    	);
-  });
-
-	function collage() {
-    $('.Collage').collagePlus(
-        {
-            'fadeSpeed' : 2000
-        }
-    );
-	};
-
-   var resizeTimer = null;
-	$(window).bind('resize', function() {
-	    // hide all the images until we resize them
-	    // set the element you are scaling i.e. the first child nodes of ```.Collage``` to opacity 0
-	    $('.Collage .Image_Wrapper').css("opacity", 0);
-	    // set a timer to re-apply the plugin
-	    if (resizeTimer) clearTimeout(resizeTimer);
-	    resizeTimer = setTimeout(collage, 200);
-	});
 
 </script>
