@@ -18,15 +18,4 @@
 //= require_tree .
 
 
-	$(window).load(function () {
-    alert("is this working??");
 
-  	$('.Collage').collagePlus(
-  		{
-      'effect' 							: 'effect-2',
-      'fadeSpeed'       		: "fast",
-      'allowPartialLastRow'	: false
-  		}
-    );
-    
-  });
