@@ -28,7 +28,7 @@
 	        <li><%= link_to "Donate", donate_path %></li>
 	        <li><%= link_to "Events", events_path %></li>
 	        <li><%= link_to "About The Foundation", hcl_path %></li>
-	        <li class="about-trigger"><%= link_to "Erik Hendricks", about_path %></li>
+	        <li><%= link_to "Erik Hendricks", about_path %></li>
 	        <li><%= link_to "Contact", contact_path %></li>
 	      </ul>
     	</div><!-- /.navbar-collapse -->
@@ -52,6 +52,42 @@
 			</div>
 	  </div> 
   </nav>
+
+    <script type="text/javascript">
+
+    // All images need to be loaded for this plugin to work so
+    // we end up waiting for the whole window to load in this example
+   
+        $(document).ready(function(){
+            collage();
+           
+        });
+    
+
+
+    // Here we apply the actual CollagePlus plugin
+
+    function collage() {
+        $('.Collage').collagePlus(
+            {
+                'fadeSpeed'     : 2000,
+                'targetHeight'  : 200
+            }
+        );
+    };
+
+
+    // This is just for the case that the browser window is resized
+    var resizeTimer = null;
+    $(window).bind('resize', function() {
+        // hide all the images until we resize them
+        $('.Collage .Image_Wrapper').css("opacity", 0);
+        // set a timer to re-apply the plugin
+        if (resizeTimer) clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(collage, 200);
+    });
+
+    </script>
 
 </body>
 </html>
