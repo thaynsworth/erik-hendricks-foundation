@@ -6,27 +6,26 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <script src="//use.typekit.net/fib6nwu.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
  			
-  <nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+  <nav id="main-nav" class="navbar navbar-fixed-top">
   	<div class="container">
 
   		<div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse-main">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <div id="erik-image" class="navbar-brand">
-	   		<%= link_to image_tag('young_erik.jpg'), root_path %> Erik Hendricks Memorial Foundation
- 				</div>
+	      <a class="navbar-brand"><%= link_to image_tag('EHMF_Logo_tester.svg'), root_path %></a>
     	</div>
 
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="nav-collapse-main">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><%= link_to "Donate", donate_path %></li>
 	        <li><%= link_to "Events", events_path %></li>
 	        <li><%= link_to "About The Foundation", hcl_path %></li>
 	        <li><%= link_to "Erik Hendricks", about_path %></li>
@@ -54,5 +53,15 @@
 	  </div> 
   </footer>
 
+
+	<script>
+		$(window).scroll(function() {
+		  if ($(document).scrollTop() > 50) {
+		    $('nav').addClass('shrink');
+		  } else {
+		    $('nav').removeClass('shrink');
+		  }
+		});
+	</script>
 </body>
 </html>

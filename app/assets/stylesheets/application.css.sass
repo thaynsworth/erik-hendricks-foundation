@@ -22,17 +22,30 @@ html
 	position: relative
 	min-height: 100%
 
-#main-nav 
-	height: 120px
-
-#erik-image img
-	height: 90px
-	width: 70px
-
 body
 	padding-top: 120px
 	margin-bottom: 60px
-	font-family: 'Pontano Sans', sans-serif
+
+#main-nav
+	padding: 10px
+	height: 10%
+	transition: 1s
+
+#main-nav img 
+	transition: 1s
+
+#main-nav.shrink img
+	height: 40%
+	width: 40%
+
+#main-nav.shrink
+	background-color: darkgrey
+	border-bottom: 1px solid black
+	height: 10%
+
+#main-nav img 
+	height: 60%
+	width: 60%
 
 .footer
 	position: absolute
