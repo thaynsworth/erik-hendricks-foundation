@@ -25,27 +25,40 @@ html
 body
 	padding-top: 120px
 	margin-bottom: 60px
-	background-color: lightgrey
 	font-family: "museo-slab"
 
 #main-nav
 	padding: 10px
-	height: 15%
-	transition: 1s
-
-#main-nav img 
+	min-height: 110px
 	transition: 1s
 
 #main-nav.shrink img
-	height: 60%
-	width: 60%
+	height: 50%
+	width: 50%
 
 #main-nav.shrink
-	height: 12%
+	min-height: 80px
 
 #main-nav img 
+	max-width: 100%
+	max-height: 100%
+	height: auto
+	transition: 1s
 	height: 70%
 	width: 70%
+
+#nav-collapse-main a
+	font-size: 12px
+
+#nav-collapse-main li:nth-last-child(2)
+	margin-right: 20px
+
+#nav-collapse-main a:hover
+	border-bottom: 1px solid black
+
+.donate-button
+	border: 1px solid black
+	margin-left: 20px
 
 .footer
 	position: absolute
