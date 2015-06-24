@@ -1,11 +1,22 @@
 
 
+
 #hcl h2 {
 	border-bottom: 1px solid black;
+	margin: 25px;
 }
 
-#about h2 {
-	border-bottom: 1px solid black;
+#hcl img {
+	height: 250px;
+	width: 250px;
+}
+
+.hcl-info {
+	margin-bottom: 30px;
+}
+
+.hcl-info img {
+	margin-top: 40px;
 }
 
 // #youtube {
@@ -59,6 +70,7 @@
 
 #about h2 {
 	margin: 25px;
+	border-bottom: 1px solid black;
 }
 
 #youtube {
