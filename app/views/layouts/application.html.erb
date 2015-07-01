@@ -55,21 +55,27 @@
 
 	<footer id="footer-nav" class="footer">
 		<div class="container-fluid">
-			<div class="col-xs-12 col-sm-4 col-md-4">
-				<ul>
-					<li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>  617.548.2938</li>
-					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  <%= mail_to "ehmemorialfoundation@gmail.com", "ehmemorialfoundation@gmail.com",
-         subject: "Contact Us - Erik Hendricks Memorial Foundation" %></li>
-				</ul>
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 text-center">
+					<%= link_to image_tag('EHMF_Logo_footer.svg'), contact_path %>
+				</div>
+
 			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 text-center">
-				<%= link_to image_tag('EHMF_Logo_footer.svg'), contact_path %>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4">
-				<ul>
-					<li>Erik Hendricks Memorial Foundation is a 501(c)(3)</li>
-					<li>&copy;2015</li>
-				</ul>
+			<div class="row">
+				
+				<div class="col-xs-12 col-sm-12 col-md-12 text-center footer-info">
+					<ul>
+						<li>Erik Hendricks Memorial Foundation is a 501(c)(3)</li>
+						<li> | </li>
+						<li>&copy;2015</li>
+						<li> | </li>
+						<li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>  617.548.2938</li>
+						<li> | </li>
+						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  <%= mail_to "ehmemorialfoundation@gmail.com", "ehmemorialfoundation@gmail.com", subject: "Contact Us - Erik Hendricks Memorial Foundation" %></li>
+					</ul>
+				</div>
+
 			</div>
 	  </div> 
   </footer>
