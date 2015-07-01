@@ -3,38 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#erik {
+#home-page-header {
+	border-bottom: 3px solid grey;
 	padding: 30px;
-	border-bottom: 1px solid black;
 }
 
-#mission {
-	
+#home-page-header p {
+	padding-top: 30px;
+	font-size: 20px;
 }
 
-#upcoming-events {
-	// background-color: lightgreen;
-	
-	height: 300px;
-}
-
-#upcoming-events h2 {
-	// text-decoration: underline;
-	border: 1px solid black;
-	padding: 10px;
-}
-
-#upcoming-events a {
-
-	text-decoration: none;
-}
-
-#main-donate {
-	// background-color: lightblue;
-	// border: 1px solid black;
-	height: 300px;
-}
-
-#home-info {
-	padding: 30px;
+#main-donate img {
+	padding-top: 40px;
+	height: 80%;
+	width: 60%;
 }

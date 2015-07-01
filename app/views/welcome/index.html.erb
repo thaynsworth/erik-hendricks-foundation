@@ -1,29 +1,39 @@
 
-
-<div id="erik" class="row">
-
-	<div class="col-xs-12 col-sm-12 col-md-4 text-center">
-		<img src="<%= asset_path 'yellow_hat.jpg'%>" alt="">
-	</div>
-
-	<div id="mission" class="col-xs-12 col-sm-12 col-md-8">
-		<h2>The Erik Hendricks Memorial Foundation</h2>
-		<p>To honor the legacy of Erik Hendricks by raising funds for charitable organization, research and patient support focused on Hairy Cell Leukemia.  HCL is the disease Erik Hendricks battled for more than 20 years and eventually took his life.</p>
-	</div>
-
-</div>
-<div id="home-info" class="row">
-
-	<div id="main-donate" class="col-xs-12 col-sm-5 col-md-5">
-		<%= link_to image_tag('donate.png'), donate_path %>
-	</div>	
-
-	<div id="upcoming-events" class="col-xs-12 col-sm-7 col-md-7">
-		<h2>Upcoming Events</h2>
-		<h3>Rocco's Round</h3>
-		<p>2015 will be the first annual golf tournament raising funds for the Erik Hendricks Memorial Foundation.  Each foursome will play 18 holes.  There will be prizes throughout the day and a raffle during lunch.  The tournament will be held at the Philadelphia Country Club and is invite only.  If you are not a golfer, you are more than welcome to attend the lunch only. If you are interested in receiving the invitation, please email Stephanie at: EHMemorialFoundation@gmail.com</p>
+<div id="home-page">
+	<div class="row">
 		
-    <a href="<%= events_path %>">Additional Events</a>
-	</div>
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<h2 class="page-header">The Erik Hendricks Memorial Foundation</h2>
+		</div>
 
+	</div>
+	<div id="home-page-header" class="row">
+
+		<div class="col-xs-12 col-sm-12 col-md-8">
+			<p>Honoring the legacy of Erik Hendricks by raising funds and awareness for Hairy Cell Leukemia (“HCL”) research, clinical trials, and patient support services. HCL is the disease that Erik Hendricks battled for more than 20 years and eventually took his life.”</p>
+		</div>
+
+		<div class="col-xs-12 col-sm-12 col-md-4 text-center">
+			<img src="<%= asset_path 'yellow_hat.jpg'%>" alt="">
+		</div>	
+
+	</div>
+	<div class="row">
+
+		<div id="main-donate" class="col-xs-12 col-sm-5 col-md-5">
+			<%= link_to image_tag('Donate_now.png'), donate_path %>
+		</div>	
+
+		<div id="upcoming-events" class="col-xs-12 col-sm-7 col-md-7">
+			<h2 class="page-header">Upcoming Events</h2>
+			<h3>Rocco's Round</h3>
+			<p>2015 will be the first annual golf tournament raising funds for the Erik Hendricks Memorial Foundation.  Each foursome will play 18 holes.  There will be prizes throughout the day and a raffle during lunch.  The tournament will be held at the Philadelphia Country Club and is invite only.  If you are not a golfer, you are more than welcome to attend the lunch only. If you are interested in receiving the invitation, please email Stephanie at: EHMemorialFoundation@gmail.com</p>
+			
+	    <a href="<%= events_path %>">Additional Events</a>
+		</div>
+
+	</div>
 </div>
+
+
+
