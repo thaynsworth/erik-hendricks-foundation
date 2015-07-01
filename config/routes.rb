@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'events' => 'static_pages#events'
   get 'contact' => 'static_pages#contact'
   get 'hcl' => 'static_pages#hcl'
+  get 'foundation' => 'static_pages#foundation'
 
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
