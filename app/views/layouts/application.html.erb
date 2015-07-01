@@ -55,14 +55,21 @@
 
 	<footer id="footer-nav" class="footer">
 		<div class="container-fluid">
-			<div class="col-xs-4 col-sm-4 col-md-4 text-center">
-				<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 617.548.2938</p>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<ul>
+					<li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>  617.548.2938</li>
+					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  <%= mail_to "ehmemorialfoundation@gmail.com", "ehmemorialfoundation@gmail.com",
+         subject: "Contact Us - Erik Hendricks Memorial Foundation" %></li>
+				</ul>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 text-center">
+			<div class="col-xs-12 col-sm-4 col-md-4 text-center">
 				<%= link_to image_tag('EHMF_Logo_footer.svg'), contact_path %>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 text-center">
-				<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>ehmemorialfoundation@gmail.com</p>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<ul>
+					<li>Erik Hendricks Memorial Foundation is a 501(c)(3)</li>
+					<li>&copy;2015</li>
+				</ul>
 			</div>
 	  </div> 
   </footer>
