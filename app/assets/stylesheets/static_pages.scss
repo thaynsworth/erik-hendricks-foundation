@@ -13,6 +13,39 @@
 	margin-bottom: 30px;
 }
 
+.hcl-info h4 {
+	text-decoration: underline;
+}
+
+.hcl-info h5 {
+	text-decoration: underline;
+}
+
+#info-nav {
+	// background-color: #C1D1E0;
+	// background-color: #FFFFA3;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	border-right: 1px solid black;
+}
+
+#info-nav ul {
+	list-style-type: none;
+}
+
+#info-nav li {
+	padding: 5px;
+}
+
+#info-nav a {
+	color: #333333;
+}
+
+#info-nav a:visited {
+	color: #333333;
+}
+
 .page-header h2{
 	border-bottom: 1px solid black;
 	margin: 25px;	
