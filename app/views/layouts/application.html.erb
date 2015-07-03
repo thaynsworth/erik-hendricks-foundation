@@ -48,9 +48,11 @@
   </nav>	
 
 	
-
-	<div class="container">
-		<%= yield %>				
+	<div>
+		<img style="transform: rotate(135deg);" class="stripe" src="<%= asset_path 'yellow-stripe-borders.svg'%>" alt="">
+		<div class="container">
+			<%= yield %>				
+		</div>
 	</div>
 
 	<footer id="footer-nav" class="footer">
