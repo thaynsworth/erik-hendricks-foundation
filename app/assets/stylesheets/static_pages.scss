@@ -1,4 +1,25 @@
 
+#donate h4 {
+	padding-bottom: 50px;
+}
+
+.donate-box {
+	border: 2px solid black;
+	height: 325px;
+	width: auto;
+	min-width: auto;
+	box-shadow: 5px 2px 2px black;
+	border-radius: 8px;
+}
+
+.donate-box h3 {
+	text-decoration: underline;
+}
+
+.donate-box input {
+	height: 60%;
+	width: 60%;
+}
 
 #hcl img {
 	height: 55%;
