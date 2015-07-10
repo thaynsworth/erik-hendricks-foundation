@@ -1,4 +1,35 @@
 
+#contact img {
+	padding-top: 40px;
+}
+
+.contact-wrapper {
+	width: auto;
+	
+	overflow: hidden;
+	width: 100%;
+	padding: 20px;
+}
+
+.first {
+	background-color: #06A77D;
+	border: 1px solid black;
+	float: left;
+	width: 30%;
+	padding: 10px;
+	color: white;
+}
+
+.first span {
+	padding-right: 10px;
+}
+
+.second {
+	border: 1px solid black;
+	padding: 10px;
+	overflow: hidden;
+}
+
 #donate h4 {
 	padding-bottom: 50px;
 }

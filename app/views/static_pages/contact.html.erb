@@ -8,25 +8,44 @@
 
 	</div>	
 	<div class="row">
-
 		<div class="col-xs-12 col-sm-6 col-md-6">
-			<div class="email">
-				
-				<%= mail_to "ehmemorialfoundation@gmail.com", "ehmemorialfoundation@gmail.com",
-         subject: "This is an example email" %>
 
-				<!-- <a href="ehmemorialfoundation@gmail.com?subject=EHMF%20Contact&body=Do%20you%20want%20automessages"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</a> -->
+			<div class="contact-wrapper">
+				<div class="first text-center">
+					<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+					Email:
+				</div>
+				<div class="second text-center">
+					<%= mail_to "ehmemorialfoundation@gmail.com", "ehmemorialfoundation@gmail.com",
+         subject: "EHMF - Contact Us" %>
+       	</div>
 			</div>
-			<div class="phone">
-				<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 555-555-5555</p>
+
+			<div class="contact-wrapper">
+				<div class="first text-center">
+					<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+					Phone:
+				</div>
+				<div class="second text-center">
+					617.548.2938
+	     	</div>
 			</div>
-			<div class="mail">
-				<p>The Erik Hendricks Memorial Foundation</p>
-				<p>Grand Central Station</p>
-				<p>P.O. Box 4777</p>
-				<p>New York, NY 10163-4777</p>
-			</div>
+
+			<div class="contact-wrapper">
+	     	<div class="first text-center">
+					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+					Address:
+				</div>
+				<div class="second text-center" style="heigh">
+					<p>The Erik Hendricks Memorial Foundation</p>
+					<p>Grand Central Station</p>
+					<p>P.O. Box 4777</p>
+					<p>New York, NY 10163-4777</p>
+	     	</div>
+     	</div>
+
 		</div>
+
 
 		<div class="col-xs-12 col-sm-6 col-md-6 text-center">
 			<img src="<%= asset_path 'family2.jpg'%>" alt="">
