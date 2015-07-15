@@ -36,12 +36,10 @@
 					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
 					Address:
 				</div>
-				<div class="second text-center" style="heigh">
-					<p>The Erik Hendricks Memorial Foundation</p>
-					<p>Grand Central Station</p>
-					<p>P.O. Box 4777</p>
-					<p>New York, NY 10163-4777</p>
+				<div style="margin-bottom:20px;" class="second text-center">
+					Haverford, PA
 	     	</div>
+				<div class="text-center" style="width:400px;height:300px;" id="map-canvas"></div>
      	</div>
 
 		</div>
@@ -53,3 +51,23 @@
 
 	</div>
 </div>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(40.0131, -75.2944);
+  var mapOptions = {
+    zoom: 10,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });
+}
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
