@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get 'donate' => 'static_pages#donate'
+  get 'donate_success' => 'static_pages#donate_success'
   get 'about' => 'static_pages#about'
   get 'events' => 'static_pages#events'
   get 'contact' => 'static_pages#contact'
