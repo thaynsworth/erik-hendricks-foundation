@@ -143,6 +143,10 @@
 		height: auto;
 		padding: 20px;
 	}
+	body {
+		padding-top: 200px;
+	}
+
 }
 
 .box-color {
@@ -175,3 +179,5 @@
     opacity:0;
 
     }
+
+@grid-float-breakpoint: 500px;
