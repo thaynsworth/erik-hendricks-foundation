@@ -12,7 +12,9 @@ function collage() {
     $('.Collage').collagePlus(
         {
             'fadeSpeed'     : 2000,
-            'targetHeight'  : 200
+            'targetHeight'  : 300,
         }
     );
 };
+
+
