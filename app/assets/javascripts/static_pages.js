@@ -9,12 +9,21 @@ $(window).bind('resize', function() {
 });
     
 function collage() {
-    $('.Collage').collagePlus(
-        {
-            'fadeSpeed'     : 2000,
-            'targetHeight'  : 300,
-        }
-    );
+
+	$('.Collage').each(function(){ 
+	    $(this).collagePlus({
+	    'fadeSpeed'     : 2000,	
+	    'targetHeight': 380
+	    });
+	});	
+    // $('.Collage').collagePlus(
+    //     {
+    //         'fadeSpeed'     : 2000,
+    //         'targetHeight'  : 380,
+    //         'allowPartialLastRow' : true
+    //     }
+    // );
 };
+
 
 
