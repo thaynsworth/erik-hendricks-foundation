@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require jquery.collagePlus
+//= require lightbox
 //= require_tree .
 
 
